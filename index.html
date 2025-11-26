@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Organizer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <label class="btn-file">
+      Select Images
+      <input type="file" id="file-picker" multiple accept="image/*">
+    </label>
+    <div id="info">Drag thumbnails to reorder. Use ← → keys. Wheel to zoom at pointer.</div>
+  </header>
+
+  <div id="layout">
+    <aside id="sidebar">
+      <div id="thumbs" tabindex="0"></div>
+    </aside>
+
+    <main id="main">
+      <div id="viewer-wrap">
+        <img id="viewer-img" draggable="false" alt="">
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
